@@ -3,12 +3,9 @@
 var canvas = document.getElementById('canvas');
 
 canvas.width = window.innerWidth;
-
 canvas.height = window.innerHeight;
 
-
 var c = canvas.getContext('2d');
-
 
 function draw() {
   c.fillStyle = 'black';
