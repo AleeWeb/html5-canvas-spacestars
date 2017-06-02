@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
-var numStars = 100; //100 of stars
+var numStars = 300;
 var stars = []; //Empty array
 var size = 1;
 
@@ -21,6 +21,8 @@ function Star() {
 
 
   this.show = function() {
+    var x, y, s; //x-axis, y-axis, size
+
     c.beginPath();
     c.fillStyle = 'white';
     c.arc(this.x, this.y, size, 0, Math.PI*2);
