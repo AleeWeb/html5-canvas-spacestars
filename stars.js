@@ -12,6 +12,7 @@ var size = 1;
 var fl = canvas.width;
 var centerX = canvas.width/2;
 var centerY = canvas.height/2;
+var speed = 8;
 for(var i=0; i<numStars; i++) {
   stars[i] = new Star();
 }
@@ -22,7 +23,7 @@ function Star() {
   this.z = Math.random()*canvas.width;    //depth of star
 
 this.move = function(){
-  this.z = this.z-1;
+  this.z = this.z-speed;
   if(this.z<=0) {
     this.z = canvas.width;
   }
